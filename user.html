@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="user.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+    <button class="glow-on-hover" onclick="location.href = '/index.html';">MovieDB</button>
+    <div class="sign">
+    <h1>Sign-up</h1>
+    <h4>Please Sign-up if you are a new user!</h4>
+    <form action="C:\xampp\htdocs\database\newuser.php" method="post>
+        <label for="user_name" ></label>
+        <input type="text" placeholder=" Enter Your username" required>
+        <br> <br>
+        <label for="date_of_birth" ></label>
+        <input type="text" placeholder="Enter Your date of birth" required onfocus="(this.type='date')" onblur="(this.type='text')" required>
+        <br><br>
+        <label for="mobile"></label>
+        <input type="text" placeholder=" Enter Your mobile number" required >
+        <br><br>
+        <label for="email" ></label>        
+        <input type="email" placeholder=" Enter Your email address" required >
+        <br><br>
+        <label for="password" ></label>
+        <input type="password" placeholder=" Enter Your password" required>    
+        <br>
+        <input type="submit" value="Create Account">
+        <br><br>
+        <h5>Already Have An Account? <a href="/login.html">Sign In</a></h5>
+    </div>
+        
+    </form>
+
+</body>
+</html>
