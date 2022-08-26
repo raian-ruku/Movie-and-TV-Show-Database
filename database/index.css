@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-roboto: "Roboto Slab", serif;
+  --font-raleway: "Raleway", sans-serif;
+}
+
+body {
+  font-family: var(--font-roboto);
+  background-color: #212426;
+}
+
+.app {
+  padding: 4rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-size: 40px;
+    font-family:'Montserrat', sans-serif;
+    background-color: transparent;       
+}
+
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: black;
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+.msg div{
+  display: inline-block;
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+
+.msg a{
+  text-decoration: none;
+  color: #f9d3b4;
+}
+.msg a:hover{
+  color: aqua;
+}
+.mov{
+ font-size: 25px;
+
+margin-right: 300px;
+margin-left: 20px;
+}
+.shows{
+  margin-right: 300px;  
+}
+.search{
+display: inline-block;
+}
+h1{
+  margin-top: 500px;
+  text-decoration: underline white;
+  color: #f9d3b4;
+}
+input[type=text]{
+  margin-top: 7px;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.253);
+  border-radius: 5px; 
+  font-family:'Montserrat', sans-serif;
+  height: 25px;
+}
+input[type=submit]{
+  background-color: rgb(170, 215, 235);
+  border-radius: 20px;
+  font-family:'Montserrat', sans-serif;
+}
+textarea{  
+  margin-top: 7px;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.253); 
+  font-family:'Montserrat', sans-serif;
+  border-radius: 5px;
+}
+textarea::placeholder{
+  font-size: 15px;
+}
+#search{
+  margin-top: 20px;
+  width: 800px;
+  height: 40px;
+  border: .5px solid #5a5149;
+  color: #f9d3b4;
+}
+#searchbtn{
+  background-color: transparent;
+  border: .5px solid #5a5149;
+  border-radius: 5px;
+  height: 40px;
+  color: #f9d3b4;
+}
+button{
+  background-color: transparent;
+
+  border-radius: 5px;
+  height: 40px;
+  color: #f9d3b4;
+  font-family:'Montserrat', sans-serif
+}
+button:hover{
+  text-decoration: underline;
+}
+p{
+  color: white;
+  font-family:'Montserrat', sans-serif;
+  
+}
+#error{
+margin-left: 400px;
+margin-right: 400px;
+font-size: 15px;
+margin-top: 5px;
+}
+#discs{
+  font-size: 15px;
+  color: #474747;
+}
+table{
+  margin-left: 450px;
+  margin-right: 450px;
+  margin-top: 30px;
+  border: none;
+  text-align: center;
+  font-family:'Montserrat', sans-serif;
+  }
+  th{
+    margin-left: auto;
+    color: #f9d3b4;
+    border: .1px solid rgba(150, 150, 150, 0.212);
+  }
+  
+  td{
+    color: #f7e9de;
+    margin-left: 20px;
+  }
+  
