@@ -56,7 +56,7 @@
         }
 
       }
-      else echo "<p id='error'>Nothing related to your search criteria was found. Do you want to submit a request to add your favorite show/movie?</p> <span><button onclick=location.href='request.php'>Submit a request</button></span>";
+      else echo "<p id='error'>Nothing related to your search criteria was found. Do you want to submit a request to add your favorite show/movie?</p> <span><button id='errb' onclick=location.href='request.php'>Submit a request</button></span>";
     }
         ?>
         </table>  
